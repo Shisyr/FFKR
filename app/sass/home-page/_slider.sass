@@ -1,0 +1,61 @@
+.slider
+  overflow: hidden
+  .slider__item
+    overflow: hidden
+    position: relative
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      left: 50%
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .61)), to(rgba(3, 1, 0, .61)))
+      background: -webkit-linear-gradient(rgba(0, 0, 0, .61), rgba(3, 1, 0, .61))
+      background: -o-linear-gradient(rgba(0, 0, 0, .61), rgba(3, 1, 0, .61))
+      background: linear-gradient(rgba(0, 0, 0, .61), rgba(3, 1, 0, .61))
+      width: 100%
+      height: 200%
+      transform: rotate(10deg)
+      z-index: 99
+  .slick-dots
+    bottom: 60px
+    left: 510px
+    li
+      width: auto
+      height: auto
+      button
+        border: 6px solid transparent
+        background: #ffffff
+        border-radius: 50%
+        width: 17px
+        height: 17px
+        padding: 0
+        &::before
+          content: ''
+      &.slick-active
+        button
+          border: 6px solid #ffffff
+          background: #770819
+          width: 31px
+          height: 31px
+
+.slider-text
+  position: absolute
+  top: 100px
+  right: 100px
+  z-index: 999
+  width: 40%
+  text-align: right
+  .slider-text__title
+    font-family: $ubuntu
+    font-weight: $bold
+    font-size: 54px
+    line-height: 72px
+    color: #ffffff
+    text-transform: uppercase
+  .slider-text__subtitle
+    font-family: $ubuntu
+    font-weight: $regular
+    font-size: 30px
+    line-height: 36px
+    color: #ffffff

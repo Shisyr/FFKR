@@ -1,0 +1,58 @@
+.last-matches
+  padding-bottom: 50px
+.last-matches-list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+.last-matches-list__item
+  display: flex
+  align-items: center
+  margin-bottom: 50px
+  ul
+    &:first-child
+      border-right: 1px solid #aeaeae
+
+.match-info-team
+  padding-right: 26px
+  margin-right: 16px
+  &__item
+    display: flex
+    align-items: center
+    justify-content: space-between
+    text-transform: capitalize
+    font-family: $ubuntu
+    font-weight: $regular
+    font-size: 30px
+    min-width: 290px
+    color: #151515
+    &:first-child
+      margin-bottom: 15px
+    .flag
+      display: inline-block
+      font-size: 0
+      margin-right: 13px
+    .count
+      display: inline-block
+      flex-grow: 1
+      text-align: right
+
+.match-info-date
+  &__item
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    font-family: $ubuntu
+    font-weight: $light
+    font-size: 16px
+    text-transform: capitalize
+    &:first-child
+      margin-bottom: 5px
+    &:not(:first-child)
+      padding-left: 19px
+    .icon
+      display: inline-block
+      width: 19px
+      height: 19px
+      margin-right: 12px
+      background: url("../img/clock-icon.png") center center/cover no-repeat

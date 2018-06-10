@@ -1,0 +1,74 @@
+.header__top
+  background: #900319
+  padding: 18px 0 20px
+.header-top__flex-wrap
+  display: flex
+  align-items: center
+  .main-logo
+    font-size: 0
+  span
+    display: inline-block
+    font-family: $ubuntu
+    font-size: 24px
+    line-height: 36px
+    color: #dcdcdc
+    padding-left: 67px
+    &:last-child
+      font-style: italic
+      padding-left: 94px
+.header__bottom
+  background: #ffffff
+  padding: 3px 0
+.header-bottom_flex-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.nav-menu__link
+  font-family: $ubuntuCondensed
+  color: #000000
+  font-size: 18px
+  line-height: 72px
+  text-transform: uppercase
+  &:not(:last-child)
+    margin-right: 25px
+.search-form
+  display: flex
+  align-items: flex-end
+  .search-form__icon
+    display: inline-block
+    width: 18px
+    height: 18px
+    background: url("../img/header_top_sprite-image.png") -2px center/cover no-repeat
+    border: none
+    margin-right: 7px
+  .search-form__field
+    display: inline-block
+    border-top: 0
+    border-left: 0
+    border-right: 0
+    border-bottom: 1px solid #000000
+    max-width: 143px
+    font-family: $ubuntu
+    font-size: 16px
+
+.social-link
+  &__item
+    display: inline-block
+    &:not(:last-child)
+      margin-right: 10px
+.social-link__link
+  display: inline-block
+  width: 22px
+  height: 22px
+  background: url("../img/header_top_sprite-image.png") 0 center/cover no-repeat
+  &.instagram
+    background-position: -36px 0px
+  &.telegram
+    background-position: -72px 0px
+  &.twitter
+    background-position: -108px 0px
+  &.youtube
+    background-position: -144px 0px
+  &.facebook
+    background-position: -179px 0px
