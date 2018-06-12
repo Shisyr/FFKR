@@ -1,0 +1,61 @@
+.news
+  background: #dfdfdf
+  padding-bottom: 60px
+.news-list
+  display: flex
+  flex-wrap: wrap
+  &__item
+    position: relative
+    overflow: hidden
+.news-list__link
+  display: block
+  font-size: 0
+  img
+    transition: all .7s
+  &:hover
+    .news-list__overlay
+      background: rgba(103, 1, 1, .77)
+    img
+      transform: scale(1.5)
+  .news-list__overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    transition: all .7s
+    background: rgba(0, 0, 0, .75)
+    padding: 100px 56px 50px
+    .news-list__title
+      width: 60%
+      min-height: 145px
+      font-family: $ubuntu
+      font-weight: $bold
+      font-size: 36px
+      line-height: 36px
+      color: #dcdcdc
+      text-transform: uppercase
+      border-bottom: 5px solid #c4d670
+      margin-bottom: 30px
+    .news-list__desc
+      font-family: $ubuntu
+      font-weight: $bold
+      font-size: 16px
+      line-height: 26px
+      color: #dcdcdc
+    .news-list__publish-date
+      position: absolute
+      bottom: 55px
+      display: flex
+      align-items: center
+      font-family: $ubuntu
+      font-weight: $light
+      font-size: 16px
+      line-height: 24px
+      color: #ffffff
+      .icon
+        display: inline-block
+        width: 19px
+        height: 19px
+        margin-right: 12px
+        background: url(../img/news-clock-icon.png) center center/cover no-repeat

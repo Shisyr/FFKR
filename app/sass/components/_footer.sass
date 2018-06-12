@@ -1,0 +1,42 @@
+.footer
+  background: #900319
+  &__top
+    border-bottom: 2px solid #9c1f32
+    padding: 45px 0
+  &__bottom
+    padding: 36px 0 45px
+    .footer__copyrighted
+      text-align: center
+      font-family: $ubuntu
+      font-weight: $regular
+      font-size: 16px
+      color: #ffffff
+.footer-top__flex-wrap
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+.footer-top-list
+  &__head
+    text-transform: uppercase
+    border-bottom: 2px solid #cb8893
+    margin-bottom: 14px
+    font-size: 18px
+  &__item
+    font-family: $ubuntuCondensed
+    color: #ffffff
+    .footer-top-list__link
+      color: inherit
+      font-size: 16px
+    &:not(:last-child)
+      padding-bottom: 14px
+.footer__icon
+  display: inline-block
+  vertical-align: text-bottom
+  margin-right: 8px
+  width: 20px
+  height: 20px
+  background: url("../../img/footer_top_sprite-image.png") 0 0/cover no-repeat
+  &.address
+    background-position: -26px 0px
+  &.phone
+    background-position: -2px 0px

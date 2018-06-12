@@ -1,0 +1,43 @@
+.rating
+  padding-bottom: 55px
+.table-rating
+  width: 100%
+  display: table
+  thead
+    display: table-header-group
+    tr
+      display: table-row
+      th
+        display: table-cell
+        text-align: left 
+        font-family: $ubuntu
+        font-weight: $regular
+        font-size: 30px
+        line-height: 24px
+        padding: 14px 0
+        &:first-child
+          width: 413px
+          text-transform: capitalize
+        &:not(:first-child)
+          width: 62px
+          text-transform: uppercase
+          text-align: center
+  tbody
+    tr
+      position: relative
+      &:nth-child(even)
+        background: #dfdfdf
+      td
+        font-family: $ubuntu
+        font-size: 30px
+        line-height: 24px
+        color: #151515
+        text-transform: capitalize
+        text-align: left
+        padding: 14px 0
+        &:not(:first-child)
+          text-align: center
+        .flag
+          display: inline-block
+          vertical-align: top
+          line-height: 0
