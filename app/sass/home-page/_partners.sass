@@ -1,3 +1,31 @@
 .partners
-  font-size: 0
-  line-height: 0
+  background: url("../img/partners-bg.png") center center/cover no-repeat
+  
+.partners-list
+  &__row
+    &:first-child
+      padding: 40px 0
+      border-bottom: 1px solid #8e8587
+    &:nth-child(2)
+      padding: 50px 0 30px
+    &:last-child
+      padding: 30px 0 40px
+    .partners-list__flex-wrap
+      display: flex
+      justify-content: space-around
+      align-items: center
+      .partners-list__item
+        &.text
+          display: inline-block
+          text-transform: uppercase
+          font-family: $ubuntu
+          font-size: 36px
+          line-height: 26px
+          color: #dcdcdc
+          cursor: default
+        &.image
+          font-size: 0
+          opacity: 0.7
+          transition: all .4s
+          &:hover
+            opacity: 1

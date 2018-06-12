@@ -1193,6 +1193,61 @@ ul.tabs li.active
 
 .partners
 {
+    background: url('../img/partners-bg.png') center center/cover no-repeat;
+}
+
+.partners-list__row:first-child
+{
+    padding: 40px 0;
+
+    border-bottom: 1px solid #8e8587;
+}
+
+.partners-list__row:nth-child(2)
+{
+    padding: 50px 0 30px;
+}
+
+.partners-list__row:last-child
+{
+    padding: 30px 0 40px;
+}
+
+.partners-list__row .partners-list__flex-wrap
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.partners-list__row .partners-list__flex-wrap .partners-list__item.text
+{
+    font-family: 'Ubuntu', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 26px;
+
+    display: inline-block;
+
+    cursor: default;
+    text-transform: uppercase;
+
+    color: #dcdcdc;
+}
+
+.partners-list__row .partners-list__flex-wrap .partners-list__item.image
+{
     font-size: 0;
-    line-height: 0;
+
+    transition: all .4s;
+
+    opacity: .7;
+}
+
+.partners-list__row .partners-list__flex-wrap .partners-list__item.image:hover
+{
+    opacity: 1;
 }
