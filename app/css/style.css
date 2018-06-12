@@ -1244,7 +1244,7 @@ ul.tabs li.active
 
     transition: all .4s;
 
-    opacity: .7;
+    opacity: .6;
 }
 
 .partners-list__row .partners-list__flex-wrap .partners-list__item.image:hover
