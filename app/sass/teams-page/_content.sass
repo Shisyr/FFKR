@@ -1,0 +1,60 @@
+.team-consist-tabs
+  padding: 55px 0 60px
+  .section__title
+    margin-bottom: 45px
+  ul.tabs li
+    color: #000000
+    font-weight: $regular
+    font-size: 30px
+    &:hover
+      color: inherit
+    &.active
+      color: #000000
+
+.team-consist-tabs-list
+  display: flex
+  flex-wrap: wrap
+  &__item
+    max-width: 285px
+    width: 100%
+
+.team-consist-tabs-list__link
+  display: block
+  .photo-wrap
+    font-size: 0
+    overflow: hidden
+    padding-top: 67px
+    background: url("../../img/teams-page-player-bg.png") center center/cover no-repeat
+    img
+      width: 115px
+      display: block
+      margin: 0 auto
+      transform: scale(1)
+      transition: all .5s
+  &:hover
+    img
+      transform: scale(1.2)
+    .team-consist-tabs-list__caption
+      background: #900319
+      .caption__title
+        color: #ffffff
+      .caption__desc
+        color: #ffffff
+.team-consist-tabs-list__caption
+  text-align: center
+  background: #ffffff
+  padding: 30px 0
+  transition: all .5s
+  .caption__title
+    font-family: $ubuntu
+    font-size: 30px
+    line-height: 40px
+    color: #000000
+    padding: 0 80px
+    transition: all .5s
+  .caption__desc
+    font-family: $ubuntu
+    font-size: 16px
+    line-height: 40px
+    color: #000000
+    transition: all .5s

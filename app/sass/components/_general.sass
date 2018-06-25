@@ -29,6 +29,72 @@ ul
   text-align: left!important
 .text-right
   text-align: right!important
+.text-center
+  text-align: center!important
+
+.match-info-team-item
+  display: flex
+  align-items: center
+  ul
+    &:first-child
+      border-right: 1px solid #aeaeae
+.match-info-team
+  padding-right: 26px
+  margin-right: 16px
+  &__item
+    display: flex
+    align-items: center
+    justify-content: space-between
+    text-transform: capitalize
+    font-family: $ubuntu
+    font-weight: $regular
+    font-size: 30px
+    min-width: 290px
+    color: #151515
+    &:first-child
+      margin-bottom: 15px
+    .flag
+      display: inline-block
+      font-size: 0
+      margin-right: 13px
+    .count
+      display: inline-block
+      flex-grow: 1
+      text-align: right
+
+.match-info-date
+  &__item
+    display: flex
+    align-items: center
+    justify-content: center
+    font-family: $ubuntu
+    font-weight: $light
+    font-size: 16px
+    text-transform: capitalize
+    &:first-child
+      margin-bottom: 5px
+    &:not(:first-child)
+      padding-left: 19px
+    .icon
+      display: inline-block
+      width: 19px
+      height: 19px
+      margin-right: 12px
+      &.date
+        background: url("../img/clock-icon.png") center center/cover no-repeat
+      &.address
+        height: 26px
+        background: url("../img/address-marker-icon.png") center center/cover no-repeat
+.match-info-address
+  align-self: flex-start
+  .match-info-date__item
+    justify-content: flex-start
+    font-weight: $regular
+    &:first-child
+      margin-bottom: 40px
+  &__item
+    &:not(:first-child)
+      padding-left: 0
 
 .section__header
   display: flex
@@ -43,3 +109,40 @@ ul
   line-height: 36px
   color: #151515
   text-transform: uppercase
+.section__desc
+  font-family: $ubuntu
+  font-size: 16px
+  line-height: 24px
+  color: #151515
+  span
+    font-weight: $bold
+    display: block
+.promo__title
+  display: block
+  text-transform: uppercase
+  font-size: 60px
+  line-height: 72px
+  text-align: left
+  font-family: $ubuntu
+  font-weight: $bold
+  color: #ffffff
+.promo__subtitle
+  display: block
+  font-size: 30px
+  line-height: 72px
+  color: #ffffff
+  font-family: $ubuntu
+  font-weight: $regular
+.form-wrap
+  width: 70%
+  .btn-wrap
+    display: flex
+    justify-content: space-between
+.btn-check
+  display: inline-block
+  border: none
+  background: #c4d670
+  padding: 18px 60px
+  font-family: $ubuntu
+  color: #151515
+  border-radius: 10px

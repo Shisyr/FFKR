@@ -1,0 +1,77 @@
+.fans
+  padding-bottom: 63px
+  .content__info
+    .section__desc
+      padding-top: 25px
+
+.prohibitions-list
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 65px 0
+  .prohibitions-list__item
+    width: 33.3%
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 20px
+    .image
+      display: block
+      width: 170px
+      height: 170px
+      background-size: cover
+      background-position: center center
+      background-repeat: no-repeat
+      &.racism
+        background-image: url('../img/prohibitions-list-rasicm.png')
+      &.toxic
+        background-image: url('../img/prohibitions-list-toxic.png')
+      &.alcohol
+        background-image: url('../img/prohibitions-list-alcohol.png')
+      &.garbage
+        background-image: url('../img/prohibitions-list-garbage.png')
+      &.danger
+        background-image: url('../img/prohibitions-list-go.png')
+      &.impudent
+        background-image: url('../../img/prohibitions-list-impudent.png')
+    .text
+      display: block
+      width: 80%
+      text-align: center
+      color: #000000
+      margin-top: 32px
+      font-family: $ubuntu
+      font-size: 16px
+      line-height: 26px
+
+.right-list
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  img
+    display: block
+    width: 32%
+  .right-list-wrap
+    width: 40%
+    .right-list__title
+      font-size: 30px
+    ul
+      padding-top: 47px
+      li
+        position: relative
+        font-family: $ubuntu
+        text-align: left
+        font-size: 16px
+        line-height: 26px
+        color: #000000
+        &:not(:last-child)
+          margin-bottom: 35px
+        &::before
+          content: ''
+          display: inline-block
+          position: absolute
+          top: 4px
+          left: -33px
+          width: 21px
+          height: 20px
+          background: url('../img/right-list-check-icon.svg') center center/cover no-repeat
