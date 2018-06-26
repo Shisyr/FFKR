@@ -2184,6 +2184,8 @@ ul.tabs li.active
 
 .projects
 {
+    overflow: hidden;
+
     padding: 60px 0 128px;
 }
 
@@ -2198,7 +2200,7 @@ ul.tabs li.active
 
 .projects .content-wrap .content__info
 {
-    width: 57%;
+    width: 50%;
 }
 
 .projects .content-wrap .content__info .section__desc
@@ -2210,8 +2212,9 @@ ul.tabs li.active
 {
     font-size: 0;
 
-    width: 20%;
-    max-width: 633px;
+    width: 633px;
+    margin-top: 60px;
+    margin-right: -200px;
     padding: 35px 38px 58px 32px;
 
     transform: rotate(-15deg);
