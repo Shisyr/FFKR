@@ -982,6 +982,19 @@ ul
     background: rgba(0, 0, 0, .6);
 }
 
+@media screen and (max-width: 968px)
+{
+    .video-single .video-single__overlay::before
+    {
+        top: 0;
+        right: 0;
+
+        height: 100%;
+
+        transform: rotate(0);
+    }
+}
+
 .video-single .video-single__overlay .play-icon
 {
     position: absolute;
@@ -999,16 +1012,54 @@ ul
     background: url('../img/icon-play.png') center center/cover no-repeat;
 }
 
+@media screen and (max-width: 768px)
+{
+    .video-single .video-single__overlay .play-icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+}
+
 .video-single .video-text
 {
     position: absolute;
-    z-index: 999;
+    z-index: 99;
     top: 50%;
     left: 4%;
 
     width: 43%;
 
     transform: translateY(-50%);
+}
+
+@media screen and (max-width: 968px)
+{
+    .video-single .video-text
+    {
+        top: 70%;
+        left: 0;
+
+        width: 100%;
+
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .video-single .video-text
+    {
+        top: 75%;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .video-single .video-text
+    {
+        display: none;
+    }
 }
 
 .video-single .video-text h2
@@ -1019,6 +1070,14 @@ ul
     line-height: 1.3;
 
     color: #fff;
+}
+
+@media screen and (max-width: 768px)
+{
+    .video-single .video-text h2
+    {
+        font-size: 18px;
+    }
 }
 
 /*Chosen style*/
@@ -2428,6 +2487,38 @@ ul.tabs li.active
     padding-top: 25px;
 }
 
+@media screen and (max-width: 1128px)
+{
+    .fans .content__info .section__desc
+    {
+        padding: 25px 15px 0;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .fans .content__info .section__title
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .fans .content__info .section__title
+    {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1128px)
+{
+    .fans .breadcrumb
+    {
+        margin-top: 20px;
+    }
+}
+
 .prohibitions-list
 {
     display: -ms-flexbox;
@@ -2439,6 +2530,14 @@ ul.tabs li.active
     justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px)
+{
+    .prohibitions-list
+    {
+        padding: 30px 0;
+    }
 }
 
 .prohibitions-list .prohibitions-list__item
@@ -2453,6 +2552,22 @@ ul.tabs li.active
     -ms-flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
+}
+
+@media screen and (max-width: 968px)
+{
+    .prohibitions-list .prohibitions-list__item
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .prohibitions-list .prohibitions-list__item
+    {
+        width: 100%;
+    }
 }
 
 .prohibitions-list .prohibitions-list__item .image
@@ -2528,12 +2643,31 @@ ul.tabs li.active
 {
     display: block;
 
-    width: 32%;
+    width: 365px;
+
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+@media screen and (max-width: 480px)
+{
+    .right-list img
+    {
+        display: none;
+    }
 }
 
 .right-list .right-list-wrap
 {
-    width: 40%;
+    width: 50%;
+}
+
+@media screen and (max-width: 968px)
+{
+    .right-list .right-list-wrap
+    {
+        width: 100%;
+    }
 }
 
 .right-list .right-list-wrap .right-list__title
@@ -2541,9 +2675,36 @@ ul.tabs li.active
     font-size: 30px;
 }
 
+@media screen and (max-width: 968px)
+{
+    .right-list .right-list-wrap .right-list__title
+    {
+        margin-top: 20px;
+
+        text-align: center;
+    }
+}
+
 .right-list .right-list-wrap ul
 {
     padding-top: 47px;
+    padding-left: 28px;
+}
+
+@media screen and (max-width: 968px)
+{
+    .right-list .right-list-wrap ul
+    {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .right-list .right-list-wrap ul
+    {
+        padding: 0 0 0 40px;
+    }
 }
 
 .right-list .right-list-wrap ul li
@@ -2577,7 +2738,7 @@ ul.tabs li.active
 
     content: '';
 
-    background: url('../img/right-list-check-icon.svg') center center/cover no-repeat;
+    background: url('../img/right-list-icon.png') center center/cover no-repeat;
 }
 
 .promo-tournaments

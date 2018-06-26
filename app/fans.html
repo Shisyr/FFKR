@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,  initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:300,300i,400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/slick-slider/slick.css">
-    <link rel="stylesheet" href="vendor/slick-slider/slick-theme.css">
-    <link rel="stylesheet" href="vendor/custom-select/chosen.min.css">
-    <link rel="stylesheet" href="vendor/nicescroll/jquery.mCustomScrollbar.min.css">
+    <link href="vendor/magnific/popup-box.min.css" rel="stylesheet">
+    <link href="vendor/nicescroll/jquery.mCustomScrollbar.min.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Title here</title>
@@ -30,15 +28,41 @@
         <div class="header__bottom">
             <div class="container">
                 <div class="header-bottom_flex-wrap">
-                    <nav class="nav-menu">
-                        <a href="" class="nav-menu__link">ффкр</a>
-                        <a href="" class="nav-menu__link">турниры</a>
-                        <a href="" class="nav-menu__link">команды</a>
-                        <a href="" class="nav-menu__link">футзал</a>
-                        <a href="" class="nav-menu__link">проекты</a>
-                        <a href="" class="nav-menu__link">для болельщиков</a>
-                        <a href="" class="nav-menu__link">вакансии</a>
-                    </nav>
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item dropdown">
+                            <span class="nav-menu__link">ффкр</span>
+                        </li>
+                        <li class="nav-menu__item dropdown">
+                            <span class="nav-menu__link ">турниры</span>
+                            <ul class="dropdown-content">
+                                <li class="dropdown-content__item">
+                                    <a href="#" class="dropdown-content__link">турниры сборных</a>
+                                </li>
+                                <li class="dropdown-content__item">
+                                    <a href="#" class="dropdown-content__link">турниры клубов</a>
+                                </li>
+                                <li class="dropdown-content__item">
+                                    <a href="#" class="dropdown-content__link">другие турниры</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item dropdown">
+                            <a href="" class="nav-menu__link">команды</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="" class="nav-menu__link">футзал</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="" class="nav-menu__link">проекты</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="" class="nav-menu__link">для болельщиков</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="" class="nav-menu__link">вакансии</a>
+                        </li>
+                    </ul>
+                    <a class="button--toggle" href="#"></a>
                     <form action="" class="search-form">
                         <button class="search-form__icon" type="submit"></button>
                         <input class="search-form__field" type="text">
@@ -94,11 +118,15 @@
                 <div class="video-single">
                     <img class="img-responsive video-single__image" src="uploads/fans-preview-video-image.jpg"
                          width="1140" height="470" alt="Preview image">
-                    <a class="video-single__overlay" href="#">
+                    <a class="video-single__overlay popup-with-zoom-anim" href="#small-dialog-1">
                         <span class="play-icon"></span>
                     </a>
                     <!--Small dialog with iFrame here-->
-
+                    <div id="small-dialog-1" class="mfp-hide small-dialog">
+                        <iframe src="https://www.youtube.com/embed/S5-TdEW6cf4" width="500"
+                                height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                                allowfullscreen></iframe>
+                    </div>
                     <div class="video-text">
                         <h2>
                             Правила поведения на стадионе во время проведения футбольных матчей.
@@ -378,9 +406,8 @@
 </div>
 </div>
 <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
-<script src="vendor/slick-slider/slick.js"></script>
 <script src="vendor/nicescroll/jquery.nicescroll.js"></script>
-<script src="vendor/custom-select/select.js"></script>
+<script src="vendor/magnific/jquery.magnific-popup.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
