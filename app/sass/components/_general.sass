@@ -139,6 +139,13 @@ ul
   font-family: $ubuntu
   font-weight: $bold
   color: #ffffff
+  +max-width-1128
+    text-align: center
+  +max-width-768
+    font-size: 45px
+  +max-width-480
+    font-size: 30px
+    line-height: 40px
 .promo__subtitle
   display: block
   font-size: 30px
@@ -146,11 +153,35 @@ ul
   color: #ffffff
   font-family: $ubuntu
   font-weight: $regular
+  +max-width-1128
+    text-align: center
+  +max-width-768
+    font-size: 25px
+    line-height: 30px
+    margin-bottom: 15px
+  +max-width-480
+    font-size: 20px
+    line-height: 25px
 .form-wrap
   width: 70%
+  +max-width-1128
+    width: 100%
+    padding: 0 50px
+  +max-width-768
+    padding: 0
   .btn-wrap
     display: flex
     justify-content: space-between
+    +max-width-968
+      flex-wrap: wrap
+    .chosen-wrapper
+      +max-width-968
+        width: 100%
+        margin: 0 90px 20px
+      +max-width-768
+        margin: 0 25px 20px
+      +max-width-480
+        margin: 0 15px 20px
 .btn-check
   display: inline-block
   border: none
@@ -159,3 +190,5 @@ ul
   font-family: $ubuntu
   color: #151515
   border-radius: 10px
+  +max-width-968
+    margin: 0 auto

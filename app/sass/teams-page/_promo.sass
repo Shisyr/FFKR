@@ -1,8 +1,18 @@
 .promo-teams
   padding: 39px 0 260px
-  background: url("../../img/teams-promo-bg.png") center center/cover no-repeat
+  background: url("../../img/teams-promo-bg.png") center center/cover
+  +max-width-1128
+    padding: 39px 0 150px
+  +max-width-968
+    padding: 39px 0 100px
   .breadcrumb
     margin-bottom: 199px
+    +max-width-1128
+      text-align: center
+    +max-width-968
+      margin-bottom: 120px
+    +max-width-768
+      margin-bottom: 90px
     .breadcrumb__item
       + .breadcrumb__item
         &::before

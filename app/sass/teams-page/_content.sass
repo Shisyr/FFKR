@@ -2,6 +2,10 @@
   padding: 55px 0 60px
   .section__title
     margin-bottom: 45px
+    +max-width-768
+      text-align: center
+    +max-width-480
+      font-size: 30px
   ul.tabs li
     color: #000000
     font-weight: $regular
@@ -14,9 +18,13 @@
 .team-consist-tabs-list
   display: flex
   flex-wrap: wrap
+  +max-width-1128
+    justify-content: center
   &__item
     max-width: 285px
     width: 100%
+    +max-width-480
+      max-width: 100%
 
 .team-consist-tabs-list__link
   display: block
