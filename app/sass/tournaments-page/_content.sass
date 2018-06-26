@@ -1,17 +1,49 @@
 .match-info
   padding: 53px 0 0
   background: #ebebeb
+  .section__title
+    +max-width-480
+      font-size: 30px
+  .section__header
+    +max-width-1128
+      flex-wrap: wrap
+      .section__title
+        width: 100%
+        text-align: center
+      .chosen-wrapper
+        width: 100%
+        margin: 0 20%
 .match-info-list
   &__item
     border-bottom: 1px solid rgba(20, 2, 5, 0.27)
     &:not(:first-child)
       padding-top: 67px
+    .match-info-team-item
+      +max-width-968
+        width: 100%
+        justify-content: center
+      +max-width-768
+        flex-wrap: wrap
+      ul
+        &:first-child
+          +max-width-768
+            width: 90%
+            border-right: 0
+            border-bottom: 1px solid #aeaeae
+            padding-bottom: 5px
+            padding: 0
+            margin: 0
 .team-statistics
   margin-top: 52px
 .team-structure
   display: flex
   justify-content: space-between
+  +max-width-768
+    flex-wrap: wrap
+    justify-content: center
   &__item
+    +max-width-768
+      margin-bottom: 10px
     .title
       display: flex
       align-items: center
@@ -37,7 +69,13 @@
   display: flex
   justify-content: space-around
   padding: 55px 0 52px
+  +max-width-768
+    flex-wrap: wrap
+    justify-content: center
   &__item
+    +max-width-768
+      width: 100%
+      text-align: center
     .title
       text-transform: capitalize
       font-family: $ubuntu

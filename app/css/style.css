@@ -213,6 +213,14 @@ ul
     align-self: flex-start;
 }
 
+@media screen and (max-width: 768px)
+{
+    .match-info-address
+    {
+        margin-top: 5px;
+    }
+}
+
 .match-info-address .match-info-date__item
 {
     font-weight: 400;
@@ -224,6 +232,14 @@ ul
 .match-info-address .match-info-date__item:first-child
 {
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px)
+{
+    .match-info-address .match-info-date__item:first-child
+    {
+        margin-bottom: 10px;
+    }
 }
 
 .match-info-address__item:not(:first-child)
@@ -2770,6 +2786,34 @@ ul.tabs li.active
     background: #ebebeb;
 }
 
+@media screen and (max-width: 480px)
+{
+    .match-info .section__title
+    {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1128px)
+{
+    .match-info .section__header
+    {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .match-info .section__header .section__title
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+    .match-info .section__header .chosen-wrapper
+    {
+        width: 100%;
+        margin: 0 20%;
+    }
+}
+
 .match-info-list__item
 {
     border-bottom: 1px solid rgba(20, 2, 5, .27);
@@ -2778,6 +2822,40 @@ ul.tabs li.active
 .match-info-list__item:not(:first-child)
 {
     padding-top: 67px;
+}
+
+@media screen and (max-width: 968px)
+{
+    .match-info-list__item .match-info-team-item
+    {
+        width: 100%;
+
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .match-info-list__item .match-info-team-item
+    {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .match-info-list__item .match-info-team-item ul:first-child
+    {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5px;
+
+        border-right: 0;
+        border-bottom: 1px solid #aeaeae;
+    }
 }
 
 .team-statistics
@@ -2792,6 +2870,25 @@ ul.tabs li.active
 
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 768px)
+{
+    .team-structure
+    {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .team-structure__item
+    {
+        margin-bottom: 10px;
+    }
 }
 
 .team-structure__item .title
@@ -2845,6 +2942,27 @@ ul.tabs li.active
 
     -ms-flex-pack: distribute;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 768px)
+{
+    .team-statistics-list
+    {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .team-statistics-list__item
+    {
+        width: 100%;
+
+        text-align: center;
+    }
 }
 
 .team-statistics-list__item .title

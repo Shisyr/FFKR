@@ -100,11 +100,15 @@ ul
         background: url("../img/address-marker-icon.png") center center/cover no-repeat
 .match-info-address
   align-self: flex-start
+  +max-width-768
+    margin-top: 5px
   .match-info-date__item
     justify-content: flex-start
     font-weight: $regular
     &:first-child
       margin-bottom: 40px
+      +max-width-768
+        margin-bottom: 10px
   &__item
     &:not(:first-child)
       padding-left: 0
