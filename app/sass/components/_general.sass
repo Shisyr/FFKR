@@ -32,15 +32,24 @@ ul
 .text-center
   text-align: center!important
 
+
 .match-info-team-item
   display: flex
   align-items: center
   ul
     &:first-child
       border-right: 1px solid #aeaeae
+      +max-width-480
+        border-right: 0
+        border-bottom: 1px solid #aeaeae
+        padding-bottom: 5px
 .match-info-team
   padding-right: 26px
   margin-right: 16px
+  +max-width-480
+    width: 90%
+    padding-right: 0
+    margin-right: 0
   &__item
     display: flex
     align-items: center
@@ -51,6 +60,8 @@ ul
     font-size: 30px
     min-width: 290px
     color: #151515
+    +max-width-480
+      font-size: 23px
     &:first-child
       margin-bottom: 15px
     .flag
@@ -63,6 +74,8 @@ ul
       text-align: right
 
 .match-info-date
+  +max-width-480
+    padding-top: 5px
   &__item
     display: flex
     align-items: center

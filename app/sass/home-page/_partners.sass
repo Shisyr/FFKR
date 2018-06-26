@@ -14,6 +14,8 @@
       display: flex
       justify-content: space-around
       align-items: center
+      +max-width-968
+        flex-wrap: wrap
       .partners-list__item
         &.text
           display: inline-block
@@ -23,9 +25,19 @@
           line-height: 26px
           color: #dcdcdc
           cursor: default
+          +max-width-480
+            margin-bottom: 10px
         &.image
           font-size: 0
           opacity: 0.6
           transition: all .4s
+          +max-width-480
+            height: 80px
+            margin-bottom: 10px
+            width: 100%
+            img
+              display: block
+              height: 100%
+              object-fit: contain
           &:hover
             opacity: 1

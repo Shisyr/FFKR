@@ -2,14 +2,20 @@
   padding: 40px 0 50px
   position: relative
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/tabs-bg.jpg") center center/cover no-repeat
-
+  +max-width-480
+    padding-top: 0
 
 .news-tabs-list
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+  +max-width-968
+    justify-content: center
   &__item
     margin-bottom: 21px
+    &:last-child
+      +max-width-480
+        margin-bottom: 0
 .news-tabs-list__link
   display: block
   font-size: 0

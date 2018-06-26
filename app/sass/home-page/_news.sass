@@ -4,9 +4,15 @@
 .news-list
   display: flex
   flex-wrap: wrap
+  +max-width-1128
+    justify-content: center
+  +max-width-480
+    padding: 0 5px
   &__item
     position: relative
     overflow: hidden
+    +max-width-768
+      margin-top: 10px
 .news-list__link
   display: block
   font-size: 0
@@ -26,6 +32,8 @@
     transition: all .7s
     background: rgba(0, 0, 0, .75)
     padding: 100px 56px 50px
+    +max-width-768
+      padding-top: 30px
     .news-list__title
       width: 60%
       min-height: 145px

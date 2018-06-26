@@ -15,7 +15,13 @@
   display: flex
   justify-content: space-between
   flex-wrap: wrap
+  .main-logo
+    +max-width-968
+      margin: 0 auto
 .footer-top-list
+  +max-width-968
+    width: 100%
+    margin-top: 20px
   &__head
     text-transform: uppercase
     border-bottom: 2px solid #cb8893
@@ -24,11 +30,16 @@
   &__item
     font-family: $ubuntuCondensed
     color: #ffffff
+    +max-width-968
+      text-align: center
     .footer-top-list__link
       color: inherit
       font-size: 16px
     &:not(:last-child)
       padding-bottom: 14px
+    &:last-child
+      +max-width-968
+        padding-bottom: 14px
 .footer__icon
   display: inline-block
   vertical-align: text-bottom

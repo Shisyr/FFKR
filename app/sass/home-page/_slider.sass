@@ -3,6 +3,14 @@
   .slider__item
     overflow: hidden
     position: relative
+    height: 420px
+    +max-width-768
+      height: 350px
+    +max-width-480
+      height: 250px
+    .slider__image
+      object-fit: cover
+      height: 100%
     &::before
       content: ''
       display: block
@@ -17,9 +25,19 @@
       height: 200%
       transform: rotate(10deg)
       z-index: 99
+      +max-width-992
+        transform: rotate(0deg)
+        left: 0
   .slick-dots
     bottom: 60px
     left: 510px
+    +max-width-1320
+      left: 37%
+    +max-width-992
+      left: 0
+      bottom: 25px
+    +max-width-480
+      bottom: 10px
     li
       width: auto
       height: auto
@@ -46,6 +64,15 @@
   z-index: 999
   width: 40%
   text-align: right
+  +max-width-1128
+    top: 31px
+    right: 20px
+  +max-width-992
+    left: 0
+    width: 100%
+    text-align: center
+    top: 50%
+    transform: translateY(-50%)
   .slider-text__title
     font-family: $ubuntu
     font-weight: $bold
@@ -53,9 +80,19 @@
     line-height: 72px
     color: #ffffff
     text-transform: uppercase
+    +max-width-1320
+      font-size: 40px
+      line-height: 42px
+    +max-width-480
+      font-size: 25px
   .slider-text__subtitle
     font-family: $ubuntu
     font-weight: $regular
     font-size: 30px
     line-height: 36px
     color: #ffffff
+    +max-width-1320
+      font-size: 25px
+      line-height: 30px
+    +max-width-480
+      font-size: 18px

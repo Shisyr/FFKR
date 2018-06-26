@@ -4,42 +4,100 @@
 .header-top__flex-wrap
   display: flex
   align-items: center
+  +max-width-480
+    flex-wrap: wrap
   .main-logo
     font-size: 0
+    +max-width-480
+      height: 50px
+      width: 100%
+      img
+        object-fit: contain
+        height: 100%
   span
     display: inline-block
     font-family: $ubuntu
     font-size: 24px
     line-height: 36px
     color: #dcdcdc
-    padding-left: 67px
+    padding-left: 67
+    +max-width-480
+      width: 100%
+      padding: 0
+      text-align: center
     &:last-child
       font-style: italic
       padding-left: 94px
+      +max-width-480
+        padding-left: 0
+        text-align: center
 .header__bottom
   background: #ffffff
-  padding: 3px 0
+  padding: 10px 0 0 0
 .header-bottom_flex-wrap
   display: flex
   justify-content: space-between
   align-items: center
+  position: relative
+  +max-width-1128
+    flex-wrap: wrap
+    justify-content: center
 
 .nav-menu
   display: flex
+  position: relative
+  &.is-closed
+    display: flex
+  +max-width-1128
+    width: 100%
+    justify-content: center
+  +max-width-768
+    display: none
+    width: 100%
+    background: inherit
+    &.is-open
+      display: block
+      margin-top: 41px
+    &.is-closed
+      display: none
 
 .nav-menu__item
   display: block
+  .nav-menu__link
+    +max-width-480
+      width: 100%
   &:not(:last-child)
     .nav-menu__link
-      margin-right: 25px
-  &.dropdown
-    transition: all 0.4s ease-in-out
-    position: relative
+      padding: 0 13px
+  &:last-child
     .nav-menu__link
+      +max-width-480
+        padding: 0 13px
+  &.dropdown
+    transition: all 0.4s
+    position: relative
+    &:hover
+      border-top-left-radius: 12px
+      border-top-right-radius: 12px
+      background: #900319
+      .nav-menu__link
+        color: #dfdfdf
+        &::after
+          margin-right: 115px
+          transform: rotate(-180deg)
+          border-color: #dfdfdf transparent transparent transparent
+      + .nav-menu__item
+        display: none
+      .dropdown-content
+        display: block
+    .nav-menu__link
+      display: flex
+      align-items: center
       &::after
         content: ''
+        transition: transform .2s cubic-bezier(.25, .46, .45, .94)
+        transform: rotate(0deg)
         display: inline-block
-        padding: 2px 0
         margin-left: 5px
         width: 0
         height: 0
@@ -47,13 +105,20 @@
         border-width: 6px 4px 0 4px
         border-color: #000000 transparent transparent transparent
     .dropdown-content
-      display: block
+      display: none
       position: absolute
-      min-width: 227px
       width: 100%
-      background: red
-      bottom: -35px
+      background: #900319
+      bottom: -93px
       z-index: 99
+      .dropdown-content__link
+        display: block
+        padding: 0 13px
+        font-family: $ubuntuCondensed
+        color: #dfdfdf
+        font-size: 18px
+        line-height: 38px
+        text-transform: uppercase
 
 
 .nav-menu__link
@@ -66,6 +131,10 @@
 .search-form
   display: flex
   align-items: flex-end
+  +max-width-480
+    width: 100%
+    justify-content: center
+    margin-bottom: 15px
   .search-form__icon
     display: inline-block
     width: 18px
@@ -104,9 +173,23 @@
   &.facebook
     background-position: -179px 0px
 
-.nav-menu__link.dropdown
-
-
-  &:hover
-    background: red
-
+.button--toggle
+  position: absolute
+  width: 39px
+  height: 39px
+  top: 0px
+  right: 3%
+  +max-width-768
+    top: -9px
+  +max-width-480
+    top: 10px
+  &::before
+    content: "\2630"
+    color: #d30712
+    position: absolute
+    right: 12%
+    top: 0
+    cursor: pointer
+    font-size: 30px
+  +min-width-768
+    display: none

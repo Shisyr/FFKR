@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	// Функционал для адаптивной шапки сайта
     var trigger = $('.button--toggle'),
-        menu = $('.main-menu'),
+        menu = $('.nav-menu'),
         isClosed = false;
 
     trigger.click(function () {
