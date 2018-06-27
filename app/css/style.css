@@ -3693,6 +3693,30 @@ ul.tabs li.active
     padding-bottom: 54px;
 }
 
+@media screen and (max-width: 1128px)
+{
+    .news-detail .breadcrumb
+    {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .news-detail .section__title
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .news-detail .section__title
+    {
+        font-size: 30px;
+    }
+}
+
 .share-list
 {
     display: -ms-flexbox;
@@ -3707,10 +3731,43 @@ ul.tabs li.active
     align-items: center;
 }
 
+@media screen and (max-width: 768px)
+{
+    .share-list
+    {
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .share-list
+    {
+        width: 100%;
+
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
 .share-list .right
 {
     display: -ms-flexbox;
     display: flex;
+}
+
+@media screen and (max-width: 480px)
+{
+    .share-list .right
+    {
+        width: 100%;
+        margin-top: 10px;
+
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 }
 
 .share-list .right span
@@ -3747,6 +3804,22 @@ ul.tabs li.active
     width: 45%;
 }
 
+@media screen and (max-width: 968px)
+{
+    .news-detail__content .left
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .news-detail__content .left
+    {
+        padding: 0 15px;
+    }
+}
+
 .news-detail__content .left .section__desc:not(:first-child)
 {
     margin-top: 34px;
@@ -3755,6 +3828,15 @@ ul.tabs li.active
 .news-detail__content .right
 {
     width: 50%;
+}
+
+@media screen and (max-width: 480px)
+{
+    .news-detail__content .right
+    {
+        width: 100%;
+        padding: 0 15px;
+    }
 }
 
 .news-detail__content .right img
@@ -3774,7 +3856,46 @@ ul.tabs li.active
 
 .news-slider
 {
+    overflow: hidden;
+
     margin-top: 30px;
+}
+
+.news-slider__item
+{
+    height: 600px;
+}
+
+@media screen and (max-width: 968px)
+{
+    .news-slider__item
+    {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .news-slider__item
+    {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .news-slider__item
+    {
+        height: 250px;
+    }
+}
+
+.news-slider__item img
+{
+    height: 100%;
+
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .news-slider .slick-dots
