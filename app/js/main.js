@@ -71,3 +71,18 @@ $(".tab_drawer_heading").click(function() {
  to add border to right side
  of last tab */
 $('ul.tabs li').last().addClass("tab_last");
+
+
+function initMap() {
+    var marker = {
+        lat: 42.8600663, lng: 74.6761475
+    };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: marker
+    });
+    var marker1 = new google.maps.Marker({
+        position: marker,
+        map: map
+    });
+}

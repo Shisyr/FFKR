@@ -3213,6 +3213,35 @@ ul.tabs li.active
     color: #000;
 }
 
+.vacancies
+{
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1128px)
+{
+    .vacancies .breadcrumb
+    {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .vacancies .section__title
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .vacancies .section__title
+    {
+        font-size: 30px;
+    }
+}
+
 .vacancies-description
 {
     display: -ms-flexbox;
@@ -3222,22 +3251,53 @@ ul.tabs li.active
     justify-content: space-between;
 }
 
+@media screen and (max-width: 1128px)
+{
+    .vacancies-description
+    {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+}
+
 .vacancies-description__image
 {
+    width: 100%;
+    max-width: 950px;
     margin-left: -390px;
+}
+
+@media screen and (max-width: 1128px)
+{
+    .vacancies-description__image
+    {
+        margin: 0 auto;
+    }
 }
 
 .vacancies-description__image img
 {
     display: block;
 
-    width: 950px;
+    width: 100%;
+    height: 100%;
+
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .vacancies-description__text
 {
     width: 50%;
     padding-left: 13px;
+}
+
+@media screen and (max-width: 1128px)
+{
+    .vacancies-description__text
+    {
+        width: 100%;
+    }
 }
 
 .vacancies-description__text > .section__desc:not(:first-child)
@@ -3271,9 +3331,16 @@ ul.tabs li.active
 
 .vacancies-list__item
 {
-    width: 100%;
-    max-width: 560px;
+    width: 49.2%;
     margin-bottom: 21px;
+}
+
+@media screen and (max-width: 768px)
+{
+    .vacancies-list__item
+    {
+        width: 100%;
+    }
 }
 
 .vacancies-list .text-center
@@ -3291,6 +3358,12 @@ ul.tabs li.active
 .vacancies-list__link img
 {
     display: block;
+
+    width: 100%;
+    height: 100%;
+
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .vacancies-list__link .vacancies-list_date
@@ -3357,6 +3430,15 @@ ul.tabs li.active
     color: #000;
 }
 
+@media screen and (max-width: 480px)
+{
+    .vacancies-list__caption .caption__title
+    {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
 .vacancies-list__caption .caption__desc
 {
     font-family: 'Ubuntu', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -3371,6 +3453,14 @@ ul.tabs li.active
     color: #000;
 }
 
+@media screen and (max-width: 480px)
+{
+    .vacancies-list__caption .caption__desc
+    {
+        padding: 10px 10px 0;
+    }
+}
+
 .contact-us
 {
     position: relative;
@@ -3381,9 +3471,26 @@ ul.tabs li.active
     margin-top: 55px;
 }
 
+@media screen and (max-width: 968px)
+{
+    .contact-us
+    {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+}
+
 .contact-us .left
 {
     width: 36%;
+}
+
+@media screen and (max-width: 968px)
+{
+    .contact-us .left
+    {
+        width: 100%;
+    }
 }
 
 .contact-us .left .section__title
@@ -3391,6 +3498,53 @@ ul.tabs li.active
     padding: 65px 0;
 
     color: #fff;
+}
+
+@media screen and (max-width: 968px)
+{
+    .contact-us .left .section__title
+    {
+        padding: 30px;
+
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .contact-us .left .section__title
+    {
+        font-size: 25px;
+
+        padding: 30px 0 15px 0;
+    }
+}
+
+.contact-us .right
+{
+    position: absolute;
+    top: 0;
+    left: 36%;
+
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 968px)
+{
+    .contact-us .right
+    {
+        position: relative;
+        left: 0;
+
+        height: 400px;
+    }
+}
+
+.contact-us .right #map
+{
+    width: 100%;
+    height: 100%;
 }
 
 .contact-us::after
@@ -3410,9 +3564,27 @@ ul.tabs li.active
     background: url('../img/vacancies-contact-us-bg.png') center center/cover no-repeat;
 }
 
+@media screen and (max-width: 968px)
+{
+    .contact-us::after
+    {
+        right: 0;
+    }
+}
+
 .our-address
 {
     margin-bottom: 65px;
+}
+
+@media screen and (max-width: 968px)
+{
+    .our-address
+    {
+        margin-bottom: 10px;
+
+        text-align: center;
+    }
 }
 
 .our-address__item
@@ -3442,6 +3614,14 @@ ul.tabs li.active
 .contact-us-form .form-row:last-child
 {
     margin-top: 17px;
+}
+
+@media screen and (max-width: 968px)
+{
+    .contact-us-form .form-row:last-child
+    {
+        text-align: center;
+    }
 }
 
 .contact-us-form .form-row .line

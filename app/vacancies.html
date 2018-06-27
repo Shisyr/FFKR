@@ -30,15 +30,41 @@
         <div class="header__bottom">
             <div class="container">
                 <div class="header-bottom_flex-wrap">
-                    <nav class="nav-menu">
-                        <a href="" class="nav-menu__link">ффкр</a>
-                        <a href="" class="nav-menu__link">турниры</a>
-                        <a href="" class="nav-menu__link">команды</a>
-                        <a href="" class="nav-menu__link">футзал</a>
-                        <a href="" class="nav-menu__link">проекты</a>
-                        <a href="" class="nav-menu__link">для болельщиков</a>
-                        <a href="" class="nav-menu__link">вакансии</a>
-                    </nav>
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item dropdown">
+                            <span class="nav-menu__link">ффкр</span>
+                        </li>
+                        <li class="nav-menu__item dropdown">
+                            <span class="nav-menu__link ">турниры</span>
+                            <ul class="dropdown-content">
+                                <li class="dropdown-content__item">
+                                    <a href="#" class="dropdown-content__link">турниры сборных</a>
+                                </li>
+                                <li class="dropdown-content__item">
+                                    <a href="#" class="dropdown-content__link">турниры клубов</a>
+                                </li>
+                                <li class="dropdown-content__item">
+                                    <a href="#" class="dropdown-content__link">другие турниры</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item dropdown">
+                            <a href="" class="nav-menu__link">команды</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="" class="nav-menu__link">футзал</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="" class="nav-menu__link">проекты</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="" class="nav-menu__link">для болельщиков</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a href="" class="nav-menu__link">вакансии</a>
+                        </li>
+                    </ul>
+                    <a class="button--toggle" href="#"></a>
                     <form action="" class="search-form">
                         <button class="search-form__icon" type="submit"></button>
                         <input class="search-form__field" type="text">
@@ -253,6 +279,9 @@
                         </div>
                     </form>
                 </div>
+                <div class="right">
+                    <div id="map"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -433,6 +462,9 @@
 <script src="vendor/slick-slider/slick.js"></script>
 <script src="vendor/nicescroll/jquery.nicescroll.js"></script>
 <script src="vendor/custom-select/select.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUFbeZE2YRZgdsfEYg2I0BcqPJWCmVh9U&callback=initMap">
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>
