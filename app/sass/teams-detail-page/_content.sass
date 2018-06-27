@@ -1,7 +1,14 @@
 .teams-detail
   padding-bottom: 53px
+  .breadcrumb
+    +max-width-1128
+      margin-top: 20px
   .section__title
     margin-bottom: 45px
+    +max-width-768
+      text-align: center
+    +max-width-480
+      font-size: 30px
   ul.tabs li
     color: #000000
     font-weight: $regular
@@ -16,21 +23,35 @@
   background: url("../../img/teams-detail-player-info-bg.png") center center/cover no-repeat
   display: flex
   justify-content: space-between
+  +max-width-768
+    flex-wrap: wrap
+    padding: 60px
+  +max-width-480
+    padding: 20px
   &__main
     width: 22%
+    +max-width-768
+      width: 100%
     > span
       margin-bottom: 40px
+      +max-width-968
+        margin-bottom: 15px
     span
       font-family: $ubuntu
       font-size: 30px
       line-height: 30px
       color: #ffffff
       display: block
+      +max-width-968
+        font-size: 20px
     .name
       text-transform: uppercase
       font-size: 36px
       line-height: 46px
       font-weight: $bold
+      +max-width-968
+        font-size: 30px
+        line-height: 35px
     .position
       font-style: italic
       text-transform: uppercase
@@ -50,8 +71,13 @@
             background: url("../img/social-icon-fb-big.png") center center no-repeat
   &__photo
     font-size: 0
+    +max-width-768
+      display: none
   &__numerically
     width: 40%
+    +max-width-768
+      width: 100%
+      margin-top: 20px
     .quote
       display: block
       span
@@ -62,6 +88,8 @@
         color: #ffffff
         &:first-child
           text-transform: uppercase
+        +max-width-968
+          line-height: 30px
     .number-list
       display: flex
       justify-content: space-between
@@ -81,6 +109,8 @@
             line-height: 24px
             width: 50%
             text-align: center
+            +max-width-968
+              margin-top: 8px
         .circle-rounded
           display: flex
           align-items: center
@@ -93,3 +123,8 @@
           font-weight: $bold
           font-size: 36px
           line-height: 46px
+          +max-width-968
+            width: 80px
+            height: 80px
+            font-size: 25px
+            line-height: 30px

@@ -3947,9 +3947,33 @@ ul.tabs li.active
     padding-bottom: 53px;
 }
 
+@media screen and (max-width: 1128px)
+{
+    .teams-detail .breadcrumb
+    {
+        margin-top: 20px;
+    }
+}
+
 .teams-detail .section__title
 {
     margin-bottom: 45px;
+}
+
+@media screen and (max-width: 768px)
+{
+    .teams-detail .section__title
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .teams-detail .section__title
+    {
+        font-size: 30px;
+    }
 }
 
 .teams-detail ul.tabs li
@@ -3983,14 +4007,49 @@ ul.tabs li.active
     justify-content: space-between;
 }
 
+@media screen and (max-width: 768px)
+{
+    .players-info
+    {
+        padding: 60px;
+
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .players-info
+    {
+        padding: 20px;
+    }
+}
+
 .players-info__main
 {
     width: 22%;
 }
 
+@media screen and (max-width: 768px)
+{
+    .players-info__main
+    {
+        width: 100%;
+    }
+}
+
 .players-info__main > span
 {
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 968px)
+{
+    .players-info__main > span
+    {
+        margin-bottom: 15px;
+    }
 }
 
 .players-info__main span
@@ -4004,6 +4063,14 @@ ul.tabs li.active
     color: #fff;
 }
 
+@media screen and (max-width: 968px)
+{
+    .players-info__main span
+    {
+        font-size: 20px;
+    }
+}
+
 .players-info__main .name
 {
     font-size: 36px;
@@ -4011,6 +4078,15 @@ ul.tabs li.active
     line-height: 46px;
 
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 968px)
+{
+    .players-info__main .name
+    {
+        font-size: 30px;
+        line-height: 35px;
+    }
 }
 
 .players-info__main .position
@@ -4058,9 +4134,26 @@ ul.tabs li.active
     font-size: 0;
 }
 
+@media screen and (max-width: 768px)
+{
+    .players-info__photo
+    {
+        display: none;
+    }
+}
+
 .players-info__numerically
 {
     width: 40%;
+}
+
+@media screen and (max-width: 768px)
+{
+    .players-info__numerically
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
 .players-info__numerically .quote
@@ -4082,6 +4175,14 @@ ul.tabs li.active
 .players-info__numerically .quote span:first-child
 {
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 968px)
+{
+    .players-info__numerically .quote span
+    {
+        line-height: 30px;
+    }
 }
 
 .players-info__numerically .number-list
@@ -4128,6 +4229,14 @@ ul.tabs li.active
     text-align: center;
 }
 
+@media screen and (max-width: 968px)
+{
+    .players-info__numerically .number-list__item span:last-child
+    {
+        margin-top: 8px;
+    }
+}
+
 .players-info__numerically .number-list__item .circle-rounded
 {
     font-size: 36px;
@@ -4149,4 +4258,16 @@ ul.tabs li.active
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 968px)
+{
+    .players-info__numerically .number-list__item .circle-rounded
+    {
+        font-size: 25px;
+        line-height: 30px;
+
+        width: 80px;
+        height: 80px;
+    }
 }
