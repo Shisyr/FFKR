@@ -4437,10 +4437,6 @@ button.slick-next::after
 
 .about-us-content .section__desc
 {
-    font-family: 'Ubuntu', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-
     margin-bottom: 25px;
 
     color: #fff;
@@ -4496,4 +4492,52 @@ button.slick-next::after
 
     border: 6px solid #fff;
     background: #770819;
+}
+
+.grassroots
+{
+    padding-bottom: 50px;
+}
+
+.grassroots-list
+{
+    margin-top: 50px;
+}
+
+.grassroots-list__item
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 66px;
+
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.grassroots-list__item img
+{
+    display: block;
+
+    width: 373px;
+    height: 248px;
+    margin-right: 66px;
+
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.grassroots-list__item .text .section__desc
+{
+    color: #020202;
+}
+
+.grassroots-list__item .text .section__desc:not(:first-child)
+{
+    margin-top: 25px;
+}
+
+.grassroots-list__item:nth-child(2n+2)
+{
+    padding-left: 125px;
 }
