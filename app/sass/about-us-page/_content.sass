@@ -1,0 +1,62 @@
+.about-us
+  background: linear-gradient(rgba(0, 0, 0, .61), rgba(3, 1, 0, .61)), url("../img/about-us-bg.png") center center/cover no-repeat
+  padding: 30px 0 70px
+  .breadcrumb__link
+    color: #FFFFFF
+  .breadcrumb__item
+    &::before
+      color: #FFFFFF
+  .section__title
+    color: #FFFFFF
+.about-us-content
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 40px
+  .left
+    width: 50%
+    .img-wrap
+      width: 567px
+      height: 371px
+      img
+        display: block
+        height: 100%
+        object-fit: cover
+  .right
+    width: 50%
+  .center
+    width: 100%
+  .section__desc
+    font-size: 16px
+    line-height: 24px
+    color: #FFFFFF
+    font-family: $ubuntu
+    margin-bottom: 25px
+.about-us-slider
+  &__item
+    height: 310px
+    img
+      height: 100%
+      object-fit: cover
+  .slick-dots
+    bottom: 26px
+    right: 20px
+    width: auto
+    li
+      width: auto
+      height: auto
+      button
+        border: 6px solid transparent
+        background: #ffffff
+        border-radius: 50%
+        width: 17px
+        height: 17px
+        padding: 0
+        &::before
+          content: ''
+      &.slick-active
+        button
+          border: 6px solid #ffffff
+          background: #770819
+          width: 31px
+          height: 31px

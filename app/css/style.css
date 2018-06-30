@@ -4368,3 +4368,132 @@ button.slick-next::after
     border-style: solid;
     border-color: transparent transparent transparent #fff;
 }
+
+.about-us
+{
+    padding: 30px 0 70px;
+
+    background: linear-gradient(rgba(0, 0, 0, .61), rgba(3, 1, 0, .61)), url('../img/about-us-bg.png') center center/cover no-repeat;
+}
+
+.about-us .breadcrumb__link
+{
+    color: #fff;
+}
+
+.about-us .breadcrumb__item::before
+{
+    color: #fff;
+}
+
+.about-us .section__title
+{
+    color: #fff;
+}
+
+.about-us-content
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 40px;
+
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.about-us-content .left
+{
+    width: 50%;
+}
+
+.about-us-content .left .img-wrap
+{
+    width: 567px;
+    height: 371px;
+}
+
+.about-us-content .left .img-wrap img
+{
+    display: block;
+
+    height: 100%;
+
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.about-us-content .right
+{
+    width: 50%;
+}
+
+.about-us-content .center
+{
+    width: 100%;
+}
+
+.about-us-content .section__desc
+{
+    font-family: 'Ubuntu', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-bottom: 25px;
+
+    color: #fff;
+}
+
+.about-us-slider__item
+{
+    height: 310px;
+}
+
+.about-us-slider__item img
+{
+    height: 100%;
+
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.about-us-slider .slick-dots
+{
+    right: 20px;
+    bottom: 26px;
+
+    width: auto;
+}
+
+.about-us-slider .slick-dots li
+{
+    width: auto;
+    height: auto;
+}
+
+.about-us-slider .slick-dots li button
+{
+    width: 17px;
+    height: 17px;
+    padding: 0;
+
+    border: 6px solid transparent;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.about-us-slider .slick-dots li button::before
+{
+    content: '';
+}
+
+.about-us-slider .slick-dots li.slick-active button
+{
+    width: 31px;
+    height: 31px;
+
+    border: 6px solid #fff;
+    background: #770819;
+}
