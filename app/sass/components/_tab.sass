@@ -1,17 +1,17 @@
 ul.tabs
   margin: 0
   padding: 0
-  float: left
   list-style: none
-  height: 32px
   width: 100%
+  display: flex
+  flex-wrap: wrap
+  +max-width-1128
+    justify-content: center
   li
-    float: left
     margin: 0
     cursor: pointer
     padding: 0 21px
     color: #ffffff
-    overflow: hidden
     position: relative
     font-family: $ubuntu
     font-weight: $bold
@@ -19,6 +19,8 @@ ul.tabs
     line-height: 36px
     text-transform: uppercase
     transition: all .4s
+    +max-width-1128
+      margin-bottom: 15px
 
 ul.tabs li
   &:hover
@@ -45,7 +47,7 @@ ul.tabs li
 
 @media screen and (max-width: 480px)
   .tabs
-    display: none
+    display: none!important
   .tab_drawer_heading
     background-color: #900319
     border-top: 1px solid #333
