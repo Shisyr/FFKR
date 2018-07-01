@@ -1,5 +1,8 @@
 .partners-sponsors
   padding-bottom: 130px
+  .breadcrumb
+    +max-width-1128
+      margin-top: 20px
   .partners-sponsors__title
     margin-bottom: 45px
     +max-width-768
@@ -7,6 +10,8 @@
     +max-width-480
       font-size: 30px
 .sponsors-list
+  +max-width-480
+    padding: 0 10px
   &__item
     display: flex
     justify-content: space-between
@@ -14,16 +19,28 @@
     align-items: center
     &:not(:first-child)
       margin-top: 50px
+    &:last-child
+      +max-width-968
+        border-bottom: none
+    +max-width-968
+      border-bottom: 2px solid #000000
+      padding-bottom: 50px
     .left
       width: 37%
       font-size: 0
+      +max-width-968
+        width: max-content
+        margin: 0 auto
       .sponsors-list__image
+        display: block
         max-width: 100%
         max-height: 100%
-        object-fit: cover
+        object-fit: contain
     .right
       width: 60%
       text-align: center
+      +max-width-968
+        width: 100%
       .sponsors-list__title
         font-size: 30px
         line-height: 48px
