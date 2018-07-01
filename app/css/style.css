@@ -4541,3 +4541,88 @@ button.slick-next::after
 {
     padding-left: 125px;
 }
+
+.regions
+{
+    padding: 60px 0;
+
+    background: url('../../img/regions-bg.png') center center no-repeat;
+}
+
+.regions .breadcrumb__link
+{
+    color: #fff;
+}
+
+.regions .breadcrumb__item::before
+{
+    color: #fff;
+}
+
+.regions .section__title
+{
+    color: #fff;
+}
+
+.regions-info
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.regions-info .left .regions-info__title
+{
+    font-size: 30px;
+    font-weight: 400;
+
+    position: relative;
+
+    margin-bottom: 24px;
+    padding: 40px 0 21px;
+
+    text-transform: none;
+}
+
+.regions-info .left .regions-info__title::after
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 119px;
+    height: 4px;
+
+    content: '';
+
+    background: #c4d670;
+}
+
+.regions-info .left .regions-info-list__item
+{
+    font-family: 'Ubuntu', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 34px;
+
+    color: #fff;
+}
+
+.regions-info .right
+{
+    width: 100%;
+    max-width: 648px;
+}
+
+.regions-info .right img
+{
+    height: 100%;
+
+    -o-object-fit: cover;
+       object-fit: cover;
+}

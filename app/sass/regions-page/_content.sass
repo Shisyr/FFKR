@@ -1,0 +1,43 @@
+.regions
+  background: url("../../img/regions-bg.png") center center no-repeat
+  padding: 60px 0
+  .breadcrumb__link
+    color: #FFFFFF
+  .breadcrumb__item
+    &::before
+      color: #FFFFFF
+  .section__title
+    color: #FFFFFF
+.regions-info
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  .left
+    .regions-info__title
+      font-size: 30px
+      font-weight: $regular
+      text-transform: none
+      position: relative
+      padding: 40px 0 21px
+      margin-bottom: 24px
+      &::after
+        content: ''
+        position: absolute
+        display: block
+        width: 119px
+        height: 4px
+        background: #c4d670
+        bottom: 0
+        left: 0
+    .regions-info-list
+      &__item
+        font-family: $ubuntu
+        font-size: 16px
+        line-height: 34px
+        color: #FFFFFF
+  .right
+    max-width: 648px
+    width: 100%
+    img
+      height: 100%
+      object-fit: cover
