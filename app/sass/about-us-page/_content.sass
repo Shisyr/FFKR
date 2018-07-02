@@ -8,30 +8,58 @@
       color: #FFFFFF
   .section__title
     color: #FFFFFF
+    +max-width-768
+      text-align: center
+    +max-width-480
+      font-size: 30px
 .about-us-content
   display: flex
   justify-content: space-between
   flex-wrap: wrap
   margin-top: 40px
+  +max-width-1128
+    align-items: center
+    padding: 15px
   .left
     width: 50%
+    +max-width-1128
+      width: 100%
     .img-wrap
-      width: 567px
-      height: 371px
+      max-width: 567px
+      max-height: 371px
+      +max-width-1128
+        margin: 0 auto
+      +max-width-480
+        width: 320px
+        max-width: 100%
       img
         display: block
         height: 100%
         object-fit: cover
   .right
     width: 50%
+    +max-width-1128
+      width: 100%
   .center
     width: 100%
   .section__desc
     color: #FFFFFF
     margin-bottom: 25px
 .about-us-slider
+  +max-width-1128
+    width: 570px!important
+    margin: 0 auto
+  +max-width-768
+    width: 420px!important
+  +max-width-480
+    width: 100%!important
+    margin: 0
   &__item
     height: 310px
+    +max-width-768
+      height: 250px
+    +max-width-480
+      height: 150px
     img
       height: 100%
       object-fit: cover

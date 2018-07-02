@@ -27,7 +27,7 @@ ul
 .container
 {
     width: 100%;
-    min-width: 320px;
+    min-width: 300px;
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -4408,6 +4408,22 @@ button.slick-next::after
     color: #fff;
 }
 
+@media screen and (max-width: 768px)
+{
+    .about-us .section__title
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .about-us .section__title
+    {
+        font-size: 30px;
+    }
+}
+
 .about-us-content
 {
     display: -ms-flexbox;
@@ -4421,15 +4437,51 @@ button.slick-next::after
         flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1128px)
+{
+    .about-us-content
+    {
+        padding: 15px;
+
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
 .about-us-content .left
 {
     width: 50%;
 }
 
+@media screen and (max-width: 1128px)
+{
+    .about-us-content .left
+    {
+        width: 100%;
+    }
+}
+
 .about-us-content .left .img-wrap
 {
-    width: 567px;
-    height: 371px;
+    max-width: 567px;
+    max-height: 371px;
+}
+
+@media screen and (max-width: 1128px)
+{
+    .about-us-content .left .img-wrap
+    {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .about-us-content .left .img-wrap
+    {
+        width: 320px;
+        max-width: 100%;
+    }
 }
 
 .about-us-content .left .img-wrap img
@@ -4447,6 +4499,14 @@ button.slick-next::after
     width: 50%;
 }
 
+@media screen and (max-width: 1128px)
+{
+    .about-us-content .right
+    {
+        width: 100%;
+    }
+}
+
 .about-us-content .center
 {
     width: 100%;
@@ -4459,9 +4519,51 @@ button.slick-next::after
     color: #fff;
 }
 
+@media screen and (max-width: 1128px)
+{
+    .about-us-slider
+    {
+        width: 570px !important;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .about-us-slider
+    {
+        width: 420px !important;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .about-us-slider
+    {
+        width: 100% !important;
+        margin: 0;
+    }
+}
+
 .about-us-slider__item
 {
     height: 310px;
+}
+
+@media screen and (max-width: 768px)
+{
+    .about-us-slider__item
+    {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .about-us-slider__item
+    {
+        height: 150px;
+    }
 }
 
 .about-us-slider__item img
