@@ -4,10 +4,16 @@
 .header-top__flex-wrap
   display: flex
   align-items: center
-  +max-width-480
+  +max-width-768
     flex-wrap: wrap
+    justify-content: center
   .main-logo
     font-size: 0
+    margin-right: 164px
+    +max-width-968
+      margin-right: 100px
+    +max-width-768
+      margin-right: 0
     +max-width-480
       height: 50px
       width: 100%
@@ -21,14 +27,14 @@
     line-height: 36px
     color: #dcdcdc
     padding-left: 67
-    +max-width-480
+    +max-width-768
       width: 100%
       padding: 0
       text-align: center
     &:last-child
       font-style: italic
       padding-left: 94px
-      +max-width-480
+      +max-width-768
         padding-left: 0
         text-align: center
 .header__bottom
