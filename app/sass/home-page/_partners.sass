@@ -17,6 +17,8 @@
       +max-width-968
         flex-wrap: wrap
       .partners-list__item
+        +max-width-968
+          margin: 10px 0
         &.text
           display: inline-block
           text-transform: uppercase
@@ -29,7 +31,6 @@
             margin-bottom: 10px
         &.image
           font-size: 0
-          opacity: 0.6
           transition: all .4s
           +max-width-480
             height: 80px
@@ -39,5 +40,21 @@
               display: block
               height: 100%
               object-fit: contain
-          &:hover
-            opacity: 1
+          &.afc
+            width: 241px
+            height: 119px
+            display: flex
+            align-items: center
+            justify-content: center
+          &.legenda
+            width: 134px
+            height: 64px
+            display: flex
+            align-items: center
+            justify-content: center
+          &.eldorado
+            width: 249px
+            height: 49px
+            display: flex
+            align-items: center
+            justify-content: center
