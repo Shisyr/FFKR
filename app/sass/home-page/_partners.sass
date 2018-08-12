@@ -1,5 +1,5 @@
 .partners
-  background: url("../img/partners-bg.png") center center/cover no-repeat
+  background: #140205
   
 .partners-list
   &__row
@@ -32,6 +32,10 @@
         &.image
           font-size: 0
           transition: all .4s
+          //opacity: 0.4
+          img
+            filter: gray /* IE6-9 */
+            -webkit-filter: grayscale(100%)
           +max-width-480
             height: 80px
             margin-bottom: 10px
@@ -40,21 +44,7 @@
               display: block
               height: 100%
               object-fit: contain
-          &.afc
-            width: 241px
-            height: 119px
-            display: flex
-            align-items: center
-            justify-content: center
-          &.legenda
-            width: 134px
-            height: 64px
-            display: flex
-            align-items: center
-            justify-content: center
-          &.eldorado
-            width: 249px
-            height: 49px
-            display: flex
-            align-items: center
-            justify-content: center
+          &:hover
+            img
+              filter: none
+              -webkit-filter: grayscale(0%)

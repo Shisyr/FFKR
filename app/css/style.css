@@ -2471,7 +2471,7 @@ ul.tabs li.active
 
 .partners
 {
-    background: url('../img/partners-bg.png') center center/cover no-repeat;
+    background: #140205;
 }
 
 .partners-list__row:first-child
@@ -2548,6 +2548,12 @@ ul.tabs li.active
     transition: all .4s;
 }
 
+.partners-list__row .partners-list__flex-wrap .partners-list__item.image img
+{
+            filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+
 @media screen and (max-width: 480px)
 {
     .partners-list__row .partners-list__flex-wrap .partners-list__item.image
@@ -2567,46 +2573,10 @@ ul.tabs li.active
     }
 }
 
-.partners-list__row .partners-list__flex-wrap .partners-list__item.image.afc
+.partners-list__row .partners-list__flex-wrap .partners-list__item.image:hover img
 {
-    display: -ms-flexbox;
-    display: flex;
-
-    width: 241px;
-    height: 119px;
-
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.partners-list__row .partners-list__flex-wrap .partners-list__item.image.legenda
-{
-    display: -ms-flexbox;
-    display: flex;
-
-    width: 134px;
-    height: 64px;
-
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.partners-list__row .partners-list__flex-wrap .partners-list__item.image.eldorado
-{
-    display: -ms-flexbox;
-    display: flex;
-
-    width: 249px;
-    height: 49px;
-
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+            filter: none;
+    -webkit-filter: grayscale(0%);
 }
 
 .promo-projects
