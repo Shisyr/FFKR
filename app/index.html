@@ -667,19 +667,27 @@
                     </a>
                 </div>
             </div>
+            <div class="more-news-btn">
+                <a href="#">More news</a>
+            </div>
         </div>
     </div>
     <div class="news-tabs">
         <div class="container">
             <div class="tab-wrap clearfix">
-                <ul class="tabs">
-                    <li class="active" rel="tab1">фото</li>
-                    <li rel="tab2">видео</li>
-                    <li rel="tab3">sales</li>
+                <ul class="nav nav-tabs tabs-home" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#photo" aria-controls="photo" role="tab" data-toggle="tab">Фото</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#video" aria-controls="video" role="tab" data-toggle="tab">Видео</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#sales" aria-controls="sales" role="tab" data-toggle="tab">sales</a>
+                    </li>
                 </ul>
-                <div class="tab_container">
-                    <h3 class="d_active tab_drawer_heading" rel="tab1">фото</h3>
-                    <div id="tab1" class="tab_content">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="photo">
                         <div class="news-tabs-list">
                             <div class="news-tabs-list__item">
                                 <a href="#" class="news-tabs-list__link">
@@ -731,9 +739,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- #tab1 -->
-                    <h3 class="tab_drawer_heading" rel="tab2">видео</h3>
-                    <div id="tab2" class="tab_content">
+                    <div role="tabpanel" class="tab-pane" id="video">
                         <div class="news-tabs-list">
                             <div class="news-tabs-list__item">
                                 <a href="#" class="news-tabs-list__link">
@@ -785,9 +791,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- #tab2 -->
-                    <h3 class="tab_drawer_heading" rel="tab3">sales</h3>
-                    <div id="tab3" class="tab_content">
+                    <div role="tabpanel" class="tab-pane" id="sales">
                         <div class="news-tabs-list">
                             <div class="news-tabs-list__item">
                                 <a href="#" class="news-tabs-list__link">
@@ -839,7 +843,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- #tab3 -->
+                </div>
+                <div class="btn-group nav-tabs-button">
+                    <button class="btn" id="prevtab" type="button"></button>
+                    <button class="btn" id="nexttab" type="button"></button>
                 </div>
             </div>
         </div>
@@ -1017,25 +1024,25 @@
                         <span>s</span>
                     </h2>
                     <ul class="footer-social-link">
-                    <li class="footer-social-link__item">
-                        <a href="#" class="footer-social-link__link instagram"></a>
-                    </li>
-                    <li class="footer-social-link__item">
-                        <a href="#" class="footer-social-link__link telegram"></a>
-                    </li>
-                    <li class="footer-social-link__item">
-                        <a href="#" class="footer-social-link__link twitter"></a>
-                    </li>
-                    <li class="footer-social-link__item">
-                        <a href="#" class="footer-social-link__link youtube"></a>
-                    </li>
-                    <li class="footer-social-link__item">
-                        <a href="#" class="footer-social-link__link facebook"></a>
-                    </li>
-                    <li class="footer-social-link__item">
-                        <a href="#" class="footer-social-link__link mycujoo"></a>
-                    </li>
-                </ul>
+                        <li class="footer-social-link__item">
+                            <a href="#" class="footer-social-link__link instagram"></a>
+                        </li>
+                        <li class="footer-social-link__item">
+                            <a href="#" class="footer-social-link__link telegram"></a>
+                        </li>
+                        <li class="footer-social-link__item">
+                            <a href="#" class="footer-social-link__link twitter"></a>
+                        </li>
+                        <li class="footer-social-link__item">
+                            <a href="#" class="footer-social-link__link youtube"></a>
+                        </li>
+                        <li class="footer-social-link__item">
+                            <a href="#" class="footer-social-link__link facebook"></a>
+                        </li>
+                        <li class="footer-social-link__item">
+                            <a href="#" class="footer-social-link__link mycujoo"></a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
@@ -1054,6 +1061,7 @@
 <script src="vendor/slick-slider/slick.js"></script>
 <script src="vendor/nicescroll/jquery.nicescroll.js"></script>
 <script src="vendor/custom-select/select.js"></script>
+<script src="vendor/tabs/tabs.js"></script>
 <script src="js/main.js"></script>
 <script type="text/javascript">
     $(".slider").slick({

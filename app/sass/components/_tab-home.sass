@@ -1,0 +1,75 @@
+ul.tabs-home
+  margin: 0
+  padding: 0
+  list-style: none
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  +max-width-1128
+    justify-content: center
+  li
+    &:not(:first-child)
+      margin-left: 90px
+      +max-width-480
+        margin-left: 0
+        margin-left: 20px
+    +max-width-480
+      width: 100%
+      margin-left: 20px
+  li a
+    margin: 0
+    cursor: pointer
+    padding-right: 165px
+    color: #ffffff
+    position: relative
+    font-family: $ubuntu
+    font-weight: $bold
+    font-size: 36px
+    line-height: 36px
+    text-transform: uppercase
+    transition: all .4s
+    +max-width-1128
+      padding-right: 30px
+      margin-bottom: 15px
+    +max-width-768
+      padding-right: 0
+      font-size: 28px
+
+ul.tabs-home li
+  &:hover
+    a
+      color: #900319
+  &.active
+    a
+      color: #900319
+    border-bottom: 5px solid #900319
+    display: block
+    +max-width-480
+      border-bottom: none
+      border-left: 5px solid #900319
+
+.tab-content
+  margin-top: 60px
+  width: 100%
+
+.nav-tabs-button
+  display: flex
+  justify-content: flex-end
+  margin-top: 24px
+  +max-width-1128
+    justify-content: center
+  .btn
+    border: none
+    background: url("../../img/tabs-navigation-icon.png") 0 0/cover no-repeat
+    width: 36px
+    height: 25px
+    &:focus
+      outline: none
+    &:last-child
+      margin-left: 29px
+      background-position: -65px 0
+.tab-content > .tab-pane
+  display: none
+
+.tab-content > .active
+  display: block

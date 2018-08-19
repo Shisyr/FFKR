@@ -67,3 +67,25 @@
         height: 19px
         margin-right: 12px
         background: url(../img/news-clock-icon.png) center center/cover no-repeat
+.more-news-btn
+  display: flex
+  justify-content: flex-end
+  margin-top: 31px
+  +max-width-1128
+    justify-content: center
+  a
+    display: flex
+    align-items: center
+    color: #151515
+    font-size: 30px
+    line-height: 26px
+    font-family: $ubuntu
+    border-bottom: 2px dashed #151515
+    padding-bottom: 16px
+    &::after
+      content: ''
+      display: block
+      width: 21px
+      height: 14px
+      margin-left: 18px
+      background: url("../../img/more-news-arrow.png") center center/cover no-repeat

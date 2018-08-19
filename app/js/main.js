@@ -1,3 +1,12 @@
+var $tabs = $('.nav li');
+
+$('#prevtab').on('click', function() {
+    $tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
+});
+
+$('#nexttab').on('click', function() {
+    $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
+});
 $(document).ready(function () {
 	// Функционал для адаптивной шапки сайта
     var trigger = $('.button--toggle'),

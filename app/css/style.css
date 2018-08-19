@@ -1337,6 +1337,174 @@ ul
     margin-right: 2px;
 }
 
+ul.tabs-home
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1128px)
+{
+    ul.tabs-home
+    {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+ul.tabs-home li:not(:first-child)
+{
+    margin-left: 90px;
+}
+
+@media screen and (max-width: 480px)
+{
+    ul.tabs-home li:not(:first-child)
+    {
+        margin-left: 0;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    ul.tabs-home li
+    {
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+
+ul.tabs-home li a
+{
+    font-family: 'Ubuntu', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+
+    position: relative;
+
+    margin: 0;
+    padding-right: 165px;
+
+    cursor: pointer;
+    transition: all .4s;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+@media screen and (max-width: 1128px)
+{
+    ul.tabs-home li a
+    {
+        margin-bottom: 15px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    ul.tabs-home li a
+    {
+        font-size: 28px;
+
+        padding-right: 0;
+    }
+}
+
+ul.tabs-home li:hover a
+{
+    color: #900319;
+}
+
+ul.tabs-home li.active
+{
+    display: block;
+
+    border-bottom: 5px solid #900319;
+}
+
+ul.tabs-home li.active a
+{
+    color: #900319;
+}
+
+@media screen and (max-width: 480px)
+{
+    ul.tabs-home li.active
+    {
+        border-bottom: none;
+        border-left: 5px solid #900319;
+    }
+}
+
+.tab-content
+{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.nav-tabs-button
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 24px;
+
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1128px)
+{
+    .nav-tabs-button
+    {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.nav-tabs-button .btn
+{
+    width: 36px;
+    height: 25px;
+
+    border: none;
+    background: url('../../img/tabs-navigation-icon.png') 0 0/cover no-repeat;
+}
+
+.nav-tabs-button .btn:focus
+{
+    outline: none;
+}
+
+.nav-tabs-button .btn:last-child
+{
+    margin-left: 29px;
+
+    background-position: -65px 0;
+}
+
+.tab-content > .tab-pane
+{
+    display: none;
+}
+
+.tab-content > .active
+{
+    display: block;
+}
+
 ul.tabs
 {
     display: -ms-flexbox;
@@ -1374,7 +1542,6 @@ ul.tabs li
     padding: 0 21px;
 
     cursor: pointer;
-    transition: all .4s;
     text-transform: uppercase;
 
     color: #fff;
@@ -2380,6 +2547,57 @@ ul.tabs li.active
     background: url(../img/news-clock-icon.png) center center/cover no-repeat;
 }
 
+.more-news-btn
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 31px;
+
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1128px)
+{
+    .more-news-btn
+    {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.more-news-btn a
+{
+    font-family: 'Ubuntu', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 26px;
+
+    display: -ms-flexbox;
+    display: flex;
+
+    padding-bottom: 16px;
+
+    color: #151515;
+    border-bottom: 2px dashed #151515;
+
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.more-news-btn a::after
+{
+    display: block;
+
+    width: 21px;
+    height: 14px;
+    margin-left: 18px;
+
+    content: '';
+
+    background: url('../../img/more-news-arrow.png') center center/cover no-repeat;
+}
+
 .news-tabs
 {
     position: relative;
@@ -2387,14 +2605,6 @@ ul.tabs li.active
     padding: 40px 0 50px;
 
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/tabs-bg.jpg') center center/cover no-repeat;
-}
-
-@media screen and (max-width: 480px)
-{
-    .news-tabs
-    {
-        padding-top: 0;
-    }
 }
 
 .news-tabs-list
@@ -2408,7 +2618,7 @@ ul.tabs li.active
     justify-content: space-between;
 }
 
-@media screen and (max-width: 968px)
+@media screen and (max-width: 1128px)
 {
     .news-tabs-list
     {
